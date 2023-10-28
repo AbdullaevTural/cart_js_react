@@ -1,0 +1,29 @@
+@import "./../App/vars";
+.cart-footer {
+    display: grid;
+    column-gap: 30px;
+    padding: 19px;
+    background-color: #EAEFF2;
+    grid-template-columns: 5fr 3fr 4fr;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 21.6px */
+    @media (max-width:$mobile){
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    @media (max-width:$mobile-xs){
+        grid-template-columns: 1fr;
+        row-gap:10px ;
+        
+    }
+    
+}
+.cart-footer__count {
+    grid-column-start: 2;
+    @media (max-width:$mobile){
+        grid-template-columns: 1fr 1fr;
+        grid-column-start: 1;
+    }
+}

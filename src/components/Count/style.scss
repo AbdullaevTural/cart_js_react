@@ -1,0 +1,36 @@
+.count {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.count__box {
+    width: 40px;
+    height: 30px;
+    border-radius: 3px;
+    background: #EAEFF2;
+}
+
+.count__input {
+    max-width: 100%;
+    padding-top: 4px;
+    background-color: transparent;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 23.4px */
+}
+.count__input::-webkit-inner-spin-button,
+.count__input::-webkit-outer-spin-button{
+    appearance: none;
+}
+.count__controls {
+    display: flex;
+    flex-direction: column;
+    row-gap: 9px;
+}
+.count__controls img {
+    display: block;
+}
+
